@@ -37,7 +37,7 @@ while True:
     s4.set(s4a)
 
     s5a = query(27027)
-    s5.set(s5)
+    s5.set(s5a)
 
     s6a = s1a + s2a + s3a + s4a + s5a
     s6.set(s6a)
