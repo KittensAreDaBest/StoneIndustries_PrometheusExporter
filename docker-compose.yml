@@ -1,8 +1,13 @@
 version: "3"
 
 services:
-  exporter:
-    container_name: "servercount_exporter"
-    build: .
+  se_exporter:
+    container_name: "spacenginners_exporter"
+    build: ./se_exporter
     ports:
       - "8750:8750"
+  discord_exporter:
+    container_name: "discord_exporter"
+    build: ./discord_exporter
+    ports:
+      - "8760:8760"

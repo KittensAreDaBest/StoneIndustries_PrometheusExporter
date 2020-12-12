@@ -2,7 +2,6 @@ from prometheus_client import Gauge, start_http_server, REGISTRY, PROCESS_COLLEC
 import a2s
 import socket
 import time
-
 REGISTRY.unregister(PROCESS_COLLECTOR)
 REGISTRY.unregister(PLATFORM_COLLECTOR)
 REGISTRY.unregister(REGISTRY._names_to_collectors['python_gc_objects_collected_total'])
